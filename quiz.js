@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function  {
     const submitButton = document.getElementById("submit-answer");
     const userAnswer = document.getElementById("feedback");
 
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
 
-        if (correctAnswer === null) {
+        if (checkAnswer === correctAnswer) {
            userAnswer.textContent = "Please select an answer before submitting.";
            userAnswer.style.color = "orange";
             return;
