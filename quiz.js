@@ -6,22 +6,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function checkAnswer() {
         const options = document.getElementsByName("quiz");
-        let selectedValue = null;
+        let correctAnswer = null;  /* selectedValue*/ 
 
         for (let option of options) {
             if (option.checked) {
-                selectedValue = option.value;
+                correctAnswer = option.value;
                 break;
             }
         }
 
-        if (selectedValue === null) {
+        if (correctAnswer === null) {
             feedback.textContent = "Please select an answer before submitting.";
             feedback.style.color = "orange";
             return;
         }
 
-        if (selectedValue === "4") {
+        if (correctAnswer === "4") {
             feedback.textContent = "Correct! 🎉";
             feedback.style.color = "green";
         } else {
