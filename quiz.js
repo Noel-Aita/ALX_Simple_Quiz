@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const submitButton = document.getElementById("submit-answer");
-    const feedback = document.getElementById("feedback");
+    const userAnswer = document.getElementById("feedback");
 
     submitButton.addEventListener("click", checkAnswer);
 
@@ -16,17 +16,17 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         if (correctAnswer === null) {
-            feedback.textContent = "Please select an answer before submitting.";
-            feedback.style.color = "orange";
+           userAnswer.textContent = "Please select an answer before submitting.";
+           userAnswer.style.color = "orange";
             return;
         }
 
         if (correctAnswer === "4") {
-            feedback.textContent = "Correct! 🎉";
-            feedback.style.color = "green";
+            userAnswer.textContent = "Correct! 🎉";
+            userAnswer.style.color = "green";
         } else {
-            feedback.textContent = "Incorrect. Try again!";
-            feedback.style.color = "red";
+            userAnswer.textContent = "Incorrect. Try again!";
+            userAnswer.style.color = "red";
         }
     }
 });
