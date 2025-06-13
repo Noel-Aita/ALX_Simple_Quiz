@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     submitButton.addEventListener("click", checkAnswer);
 
+    const checkAnswer = document.querySelector('input[name="quiz"]:checked');
+
     function checkAnswer() {
         const options = document.getElementsByName("quiz");
         let correctAnswer = null;  /* selectedValue*/ 
