@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function  {
             userAnswer.textContent = "Correct! Well done.";  /*🎉*/
             userAnswer.style.color = "green";
         } else {
-            userAnswer.textContent = "Incorrect. Try again!";
+            userAnswer.textContent = "That's incorrect. Try again!";
             userAnswer.style.color = "red";
         }
     }
