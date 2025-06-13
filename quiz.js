@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function  {
         }
 
         if (userAnswer === "4") {
-            userAnswer.textContent = "Correct! 🎉";
+            userAnswer.textContent = "Correct! Well done.";  /*🎉*/
             userAnswer.style.color = "green";
         } else {
             userAnswer.textContent = "Incorrect. Try again!";
