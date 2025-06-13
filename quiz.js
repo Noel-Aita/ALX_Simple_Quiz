@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function  {
 
     const checkAnswer = document.querySelector('input[name="quiz"]:checked');
 
+
     function checkAnswer() {
         const options = document.getElementsByName("quiz");
         let correctAnswer = null;  /* selectedValue*/ 
@@ -17,13 +18,13 @@ document.addEventListener("DOMContentLoaded", function  {
             }
         }
 
-        if (checkAnswer === correctAnswer) {
+        if (userAnswer === correctAnswer) {
            userAnswer.textContent = "Please select an answer before submitting.";
            userAnswer.style.color = "orange";
             return;
         }
 
-        if (correctAnswer === "4") {
+        if (userAnswer === "4") {
             userAnswer.textContent = "Correct! 🎉";
             userAnswer.style.color = "green";
         } else {
